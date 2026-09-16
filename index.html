@@ -1,81 +1,707 @@
-<!-- Homepage Hero Section (Above the Fold) -->
-<section class="relative bg-navy-950 text-white min-h-[85vh] flex items-center overflow-hidden py-24">
-  
-  <!-- Background Video & Dark Gradient Overlay -->
-  <div class="absolute inset-0 z-0 pointer-events-none">
-    <div class="w-full h-full relative" style="padding-bottom: 56.25%;">
-      <iframe 
-        id="js_video_iframe" 
-        src="https://jumpshare.com/embed/BlKtdsUngVrYKdzPIfMD" 
-        frameborder="0" 
-        webkitallowfullscreen 
-        mozallowfullscreen 
-        allowfullscreen 
-        class="absolute top-0 left-0 w-full h-full object-cover">
-      </iframe>
-    </div>
-    <!-- Gradient overlay ensures dark contrast for white hero text -->
-    <div class="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-navy-900/75 z-10"></div>
-  </div>
-  
-  <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="max-w-3xl space-y-8">
-      
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent/20 border border-accent/40 text-accent-light text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
-        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-        Regional Trial Advocates &bull; Serving Pinellas County & Tampa Bay
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palm Harbor Personal Injury Lawyers | Andreopoulos Law</title>
+  <meta name="description" content="Partner with a Palm Harbor personal injury attorney with 23+ years of trial experience and over 88 jury trials. Free consultations. No fee unless we win." />
+
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              800: '#1a335d',
+              900: '#11274B',
+              950: '#0a1a33',
+            },
+            accent: {
+              DEFAULT: '#2EA3F2',
+              light: '#60bafd',
+              dark: '#1181d0',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-nav {
+      background: rgba(17, 39, 75, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-accent selection:text-white">
+
+  <!-- Top Emergency / Quick Info Bar -->
+  <aside class="bg-navy-950 text-slate-300 text-xs sm:text-sm py-2.5 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="inline-flex items-center text-accent-light font-semibold">
+          <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+          </svg>
+          24/7 Access: Call, Text, Email, Chat, or Form
+        </span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="hidden md:inline text-slate-300">Offices in Palm Harbor, Clearwater, Holiday & Largo</span>
       </div>
-
-      <!-- Main Headline -->
-      <h1 class="text-4xl sm:text-6xl font-serif font-bold tracking-tight leading-tight">
-        Pinellas County &amp; Tampa Bay <br/>
-        <span class="text-accent-light">Personal Injury Lawyers</span>
-      </h1>
-
-      <!-- Sub-Headline -->
-      <p class="text-lg sm:text-xl text-slate-200 font-light leading-relaxed">
-        Dedicated trial advocacy with 4 convenient offices in <strong class="text-white font-semibold">Palm Harbor, Clearwater, Holiday, and Largo</strong>. No Legal Fee Unless We Win Your Case.
-      </p>
-
-      <p class="text-slate-300 text-base leading-relaxed">
-        Every case is personally directed by lead attorney John Andreopoulos—bringing over 23 years of trial experience and 88+ jury trials tried across Pinellas and Pasco Counties.
-      </p>
-
-      <!-- Stats Grid -->
-      <div class="grid grid-cols-3 gap-6 pt-4 border-t border-white/15 max-w-lg">
-        <div>
-          <div class="font-serif text-3xl font-bold text-white">23+</div>
-          <div class="text-xs text-slate-300 font-medium mt-0.5">Years Experience</div>
-        </div>
-        <div>
-          <div class="font-serif text-3xl font-bold text-accent-light">88+</div>
-          <div class="text-xs text-slate-300 font-medium mt-0.5">Jury Trials Led</div>
-        </div>
-        <div>
-          <div class="font-serif text-3xl font-bold text-white">4</div>
-          <div class="text-xs text-slate-300 font-medium mt-0.5">Regional Offices</div>
-        </div>
-      </div>
-
-      <!-- Multi-Channel CTA Notification -->
-      <div class="p-4 bg-white/10 border border-white/15 rounded-xl backdrop-blur-sm text-xs text-slate-200 flex flex-wrap items-center gap-2">
-        <span class="font-bold text-accent-light uppercase tracking-wider">Fast Response Options:</span>
-        <span>You can <strong>Call</strong>, <strong>Text</strong>, <strong>Email</strong>, <strong>Chat with our 24/7 Assistant</strong>, or <strong>Fill Out Our Online Form</strong> below.</span>
-      </div>
-
-      <!-- Prominent Hero CTA Buttons -->
-      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-        <a href="#consultation" class="px-8 py-4 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg shadow-xl text-center transition-all">
-          Free Case Review &rarr;
-        </a>
-        <a href="tel:7279390000" class="px-8 py-4 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold rounded-lg flex items-center justify-center gap-2.5 transition-colors backdrop-blur-sm">
-          <svg class="w-5 h-5 text-accent-light" fill="currentColor" viewBox="0 0 20 20">
+      <div class="flex items-center space-x-5 ml-auto">
+        <span class="text-slate-400 hidden sm:inline">No Legal Fee Unless We Win</span>
+        <a href="tel:7279390000" class="font-bold text-white hover:text-accent-light transition-colors flex items-center">
+          <svg class="w-3.5 h-3.5 mr-1 text-accent" fill="currentColor" viewBox="0 0 20 20">
             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path>
           </svg>
           Call or Text (727) 939-0000
         </a>
       </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Navbar -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand & Logo -->
+        <a href="#" class="flex items-center group">
+          <div class="h-12 w-auto bg-white/95 rounded-lg p-1.5 flex items-center justify-center border border-white/20 shadow-md group-hover:scale-105 transition-transform">
+            <img src="images/logomark.png" alt="Andreopoulos Law Logo" class="h-full object-contain" />
+          </div>
+          <div class="ml-3.5">
+            <div class="font-serif text-lg sm:text-xl font-bold tracking-wider text-white uppercase group-hover:text-accent-light transition-colors">Andreopoulos</div>
+            <div class="text-[10px] font-sans uppercase tracking-widest text-accent-light font-bold -mt-1">Injury Lawyers &bull; Trial Firm</div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-7">
+          <a href="#about" class="text-sm font-medium text-slate-200 hover:text-accent-light transition-colors">About Firm</a>
+          <a href="#services" class="text-sm font-medium text-slate-200 hover:text-accent-light transition-colors">Personal Injury</a>
+          <a href="#values" class="text-sm font-medium text-slate-200 hover:text-accent-light transition-colors">Why Choose Us</a>
+          <a href="#video" class="text-sm font-medium text-slate-200 hover:text-accent-light transition-colors">Accident Steps</a>
+          <a href="#faq" class="text-sm font-medium text-slate-200 hover:text-accent-light transition-colors">FAQ</a>
+          <a href="#reviews" class="text-sm font-medium text-slate-200 hover:text-accent-light transition-colors">Reviews</a>
+          <a href="#locations" class="text-sm font-medium text-slate-200 hover:text-accent-light transition-colors">Locations</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <a href="#consultation" class="px-5 py-2.5 text-sm font-bold text-white bg-accent hover:bg-accent-dark rounded-lg shadow-md transition-all active:scale-95">
+            Get Free Case Review
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-300 hover:text-white" aria-label="Toggle menu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-navy-900 border-b border-white/10 px-6 py-6 space-y-4">
+      <a href="#about" class="block text-slate-200 hover:text-accent-light font-medium">About Firm</a>
+      <a href="#services" class="block text-slate-200 hover:text-accent-light font-medium">Personal Injury</a>
+      <a href="#values" class="block text-slate-200 hover:text-accent-light font-medium">Why Choose Us</a>
+      <a href="#video" class="block text-slate-200 hover:text-accent-light font-medium">Accident Steps</a>
+      <a href="#faq" class="block text-slate-200 hover:text-accent-light font-medium">FAQ</a>
+      <a href="#reviews" class="block text-slate-200 hover:text-accent-light font-medium">Reviews</a>
+      <a href="#locations" class="block text-slate-200 hover:text-accent-light font-medium">Locations</a>
+      <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+        <a href="tel:7279390000" class="text-center font-bold text-white py-2 rounded-lg bg-white/10">Call or Text (727) 939-0000</a>
+        <a href="#consultation" class="text-center font-bold text-white bg-accent py-2.5 rounded-lg">Fill Out Online Form</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-navy-950 text-white min-h-[85vh] flex items-center overflow-hidden py-24">
+    
+    <!-- Embed Video Background Container -->
+    <div class="absolute inset-0 z-0 bg-navy-900 overflow-hidden pointer-events-none">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.77vh] min-w-full h-[56.25vw] min-h-full">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+          <iframe id="js_video_iframe" src="https://jumpshare.com/embed/BlKtdsUngVrYKdzPIfMD" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        </div>
+      </div>
+      <!-- Dark Gradient Overlay for Readability -->
+      <div class="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-navy-900/75"></div>
+    </div>
+    
+    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-8">
+        
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent/20 border border-accent/40 text-accent-light text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
+          <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+          Call &bull; Text &bull; Email &bull; Chat &bull; Online Form
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl font-serif font-bold tracking-tight leading-tight">
+          Justice That Doesn’t <br/>
+          <span class="text-accent-light">Back Down.</span>
+        </h1>
+
+        <p class="text-xl text-slate-200 font-light leading-relaxed">
+          When a Fair Offer Isn’t on The Table, We’re Ready to Fight for You.
+        </p>
+
+        <p class="text-slate-300 text-base leading-relaxed">
+          Every case is personally managed by trial attorney John Andreopoulos—offering 23+ years of experience and 88+ jury trials. Reach out anytime via call, text, chat, email, or online form.
+        </p>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-3 gap-6 pt-4 border-t border-white/15 max-w-lg">
+          <div>
+            <div class="font-serif text-3xl font-bold text-white">23+</div>
+            <div class="text-xs text-slate-300 font-medium mt-0.5">Years Experience</div>
+          </div>
+          <div>
+            <div class="font-serif text-3xl font-bold text-accent-light">88+</div>
+            <div class="text-xs text-slate-300 font-medium mt-0.5">Jury Trials Led</div>
+          </div>
+          <div>
+            <div class="font-serif text-3xl font-bold text-white">24/7</div>
+            <div class="text-xs text-slate-300 font-medium mt-0.5">Multi-Channel Access</div>
+          </div>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+          <a href="#consultation" class="px-8 py-4 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg shadow-xl text-center transition-all">
+            Fill Out Consult Form
+          </a>
+          <a href="tel:7279390000" class="px-8 py-4 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold rounded-lg flex items-center justify-center gap-2.5 transition-colors backdrop-blur-sm">
+            <svg class="w-5 h-5 text-accent-light" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path>
+            </svg>
+            Call or Text (727) 939-0000
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Accreditations & Badges Bar -->
+  <section class="bg-white border-y border-slate-200 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+        <div class="text-center">
+          <span class="font-serif font-bold text-navy-900 text-base block">AV Preeminent®</span>
+          <span class="text-xs text-slate-500">Highest Martindale-Hubbell Rating</span>
+        </div>
+        <div class="text-center">
+          <span class="font-serif font-bold text-navy-900 text-base block">The Florida Bar</span>
+          <span class="text-xs text-slate-500">Member in Good Standing Since 2002</span>
+        </div>
+        <div class="text-center">
+          <span class="font-serif font-bold text-navy-900 text-base block">Avvo Rated 10.0</span>
+          <span class="text-xs text-slate-500">Superb Legal Profile</span>
+        </div>
+        <div class="text-center">
+          <span class="font-serif font-bold text-navy-900 text-base block">Florida Justice Association</span>
+          <span class="text-xs text-slate-500">Trial Lawyers Division</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Editorial Content -->
+  <section id="about" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Text -->
+        <div class="lg:col-span-7 space-y-6">
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-900">
+            Personal Injury Lawyer in Palm Harbor, FL
+          </h2>
+          <h3 class="text-lg font-semibold text-accent">Serving Tarpon Springs, Largo & Clearwater</h3>
+          
+          <div class="space-y-4 text-slate-600 text-base leading-relaxed">
+            <p>
+              At <strong>Andreopoulos Law</strong>, we represent injury victims in Palm Harbor, Clearwater, Holiday, Largo, and surrounding areas. Founded in 2002, our firm has over 23 years of experience handling personal injury cases involving serious accidents caused by negligence.
+            </p>
+            <p>
+              Each case is personally managed by trial attorney John Andreopoulos, who has tried more than 88 jury trials, ensuring direct attorney involvement without passing clients to non-lawyers or case managers.
+            </p>
+            <p>
+              We assist clients through medical treatment coordination, evidence gathering, insurance communication, and Florida negligence law requirements—allowing them to focus on recovery while we manage the legal process.
+            </p>
+          </div>
+
+          <!-- Highlight Phone/Contact Box -->
+          <div class="p-6 bg-white border-l-4 border-accent rounded-r-xl shadow-sm text-center sm:text-left">
+            <p class="text-slate-700 text-sm leading-relaxed">
+              <strong>Connect with us 24/7: <a href="tel:7279390000" class="text-navy-900 underline font-bold hover:text-accent">Call or Text (727) 939-0000</a>, use our live chat in the corner, or <a href="#consultation" class="text-accent underline font-bold">submit our online form</a> for a free consultation.</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Firm Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-navy-900 text-white p-8 rounded-2xl shadow-xl border border-navy-800 space-y-6 text-center">
+            <div class="w-24 h-24 bg-white rounded-full p-3 mx-auto flex items-center justify-center shadow-md">
+              <img src="images/logomark.png" alt="Andreopoulos Law Firm Mark" class="w-full h-full object-contain" />
+            </div>
+            
+            <div>
+              <h4 class="font-serif text-2xl font-bold">Andreopoulos Law</h4>
+              <p class="text-xs text-accent-light uppercase tracking-widest font-semibold mt-1">Boutique Trial Law Firm</p>
+            </div>
+
+            <ul class="text-left space-y-3 text-sm text-slate-200 border-t border-white/10 pt-4">
+              <li class="flex items-center gap-3">
+                <span class="text-accent font-bold">✓</span>
+                <span>Exclusive Focus on Personal Injury</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-accent font-bold">✓</span>
+                <span>Direct Access to Your Trial Attorney</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-accent font-bold">✓</span>
+                <span>88+ Jury Trials Tried to Verdict</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-accent font-bold">✓</span>
+                <span>24/7 Phone, Text, Chat & Email Support</span>
+              </li>
+            </ul>
+
+            <a href="tel:7279390000" class="block w-full py-3 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-colors">
+              Call or Text Us Now
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice Areas Section -->
+  <section id="services" class="py-20 bg-navy-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-accent-light">Services</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold">Personal Injury Representation You Can Rely On</h2>
+        <p class="text-slate-300 text-sm">Focused exclusively on fighting for victims of accident and negligence cases.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-navy-800/80 border border-white/10 rounded-xl p-6 hover:border-accent transition-colors">
+          <h3 class="text-lg font-serif font-bold text-white mb-2">Bicycle Accidents</h3>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">Protecting cyclists injured by negligent motorists on Florida roadways.</p>
+          <a href="#consultation" class="text-xs font-bold text-accent-light hover:underline">Free Consultation &rarr;</a>
+        </div>
+
+        <div class="bg-navy-800/80 border border-white/10 rounded-xl p-6 hover:border-accent transition-colors">
+          <h3 class="text-lg font-serif font-bold text-white mb-2">Car Accidents</h3>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">Handling complex distracted, reckless, and highway collisions.</p>
+          <a href="#consultation" class="text-xs font-bold text-accent-light hover:underline">Free Consultation &rarr;</a>
+        </div>
+
+        <div class="bg-navy-800/80 border border-white/10 rounded-xl p-6 hover:border-accent transition-colors">
+          <h3 class="text-lg font-serif font-bold text-white mb-2">Motorcycle Accidents</h3>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">Fighting bias to secure maximum compensation for motorcycle riders.</p>
+          <a href="#consultation" class="text-xs font-bold text-accent-light hover:underline">Free Consultation &rarr;</a>
+        </div>
+
+        <div class="bg-navy-800/80 border border-white/10 rounded-xl p-6 hover:border-accent transition-colors">
+          <h3 class="text-lg font-serif font-bold text-white mb-2">Negligent Security</h3>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">Holding commercial property owners liable for preventable assaults.</p>
+          <a href="#consultation" class="text-xs font-bold text-accent-light hover:underline">Free Consultation &rarr;</a>
+        </div>
+
+        <div class="bg-navy-800/80 border border-white/10 rounded-xl p-6 hover:border-accent transition-colors">
+          <h3 class="text-lg font-serif font-bold text-white mb-2">Pedestrian Accidents</h3>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">Representing individuals struck in crosswalks and traffic zones.</p>
+          <a href="#consultation" class="text-xs font-bold text-accent-light hover:underline">Free Consultation &rarr;</a>
+        </div>
+
+        <div class="bg-navy-800/80 border border-white/10 rounded-xl p-6 hover:border-accent transition-colors">
+          <h3 class="text-lg font-serif font-bold text-white mb-2">Slip & Fall</h3>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">Holding retail and business owners accountable for hazard spills.</p>
+          <a href="#consultation" class="text-xs font-bold text-accent-light hover:underline">Free Consultation &rarr;</a>
+        </div>
+
+        <div class="bg-navy-800/80 border border-white/10 rounded-xl p-6 hover:border-accent transition-colors">
+          <h3 class="text-lg font-serif font-bold text-white mb-2">Truck Accidents</h3>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">Litigating against major commercial freight lines and insurers.</p>
+          <a href="#consultation" class="text-xs font-bold text-accent-light hover:underline">Free Consultation &rarr;</a>
+        </div>
+
+        <div class="bg-navy-800/80 border border-white/10 rounded-xl p-6 hover:border-accent transition-colors">
+          <h3 class="text-lg font-serif font-bold text-white mb-2">Wrongful Death</h3>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">Compassionate representation for families following fatal crashes.</p>
+          <a href="#consultation" class="text-xs font-bold text-accent-light hover:underline">Free Consultation &rarr;</a>
+        </div>
+
+      </div>
 
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Values Section -->
+  <section id="values" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        
+        <div class="space-y-6">
+          <h2 class="text-3xl font-serif font-bold text-navy-900">Personal Injury Cases We Handle</h2>
+          <p class="text-slate-600 leading-relaxed">
+            At Andreopoulos Law, we represent clients in a wide range of accident and injury cases throughout Palm Harbor, Clearwater, Largo, Holiday, and surrounding Florida communities.
+          </p>
+
+          <h3 class="text-2xl font-serif font-bold text-navy-900 pt-4">Proven Trial Experience That Matters</h3>
+          <p class="text-slate-600 leading-relaxed">
+            Insurance companies know which lawyers are willing to take a case to trial and which are not. Andreopoulos Law is fully prepared to go to court when settlement offers fall short.
+          </p>
+          
+          <ul class="space-y-2 text-slate-600 text-sm list-disc pl-5">
+            <li>Extensive courtroom experience used as leverage in settlement negotiations</li>
+            <li>Every case prepared from day one as if decided by a Pinellas County jury</li>
+            <li>Detailed case building using police records, witness statements, and expert reports</li>
+            <li>Strong litigation posture that signals cases will not be undervalued</li>
+          </ul>
+        </div>
+
+        <!-- 4 Pillars -->
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+            <h4 class="font-serif font-bold text-navy-900 text-base">Local Commitment</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">Based in Holiday, Clearwater, Palm Harbor, and Largo, serving the communities we call home.</p>
+          </div>
+
+          <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+            <h4 class="font-serif font-bold text-navy-900 text-base">Relentless Advocacy</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">We don’t settle for less than you deserve. Our firm fights tirelessly for the best outcome.</p>
+          </div>
+
+          <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+            <h4 class="font-serif font-bold text-navy-900 text-base">Trial Experience</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">With over 88 jury trials tried, John Andreopoulos brings rare courtroom leverage to your claim.</p>
+          </div>
+
+          <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-2">
+            <h4 class="font-serif font-bold text-navy-900 text-base">Easy Communication</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">Reach us your way: call, text, email, chat live, or submit our quick online form anytime.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Video & Steps Section -->
+  <section id="video" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        
+        <div class="space-y-6">
+          <h2 class="text-3xl font-serif font-bold text-navy-900">Why Clients Choose Andreopoulos Law</h2>
+          <ul class="space-y-2.5 text-slate-700 text-sm">
+            <li class="flex items-center gap-2 font-medium">✓ Over two decades of experience representing injury victims</li>
+            <li class="flex items-center gap-2 font-medium">✓ Local, experienced representation from a seasoned trial lawyer</li>
+            <li class="flex items-center gap-2 font-medium">✓ Free consultations — call, text, chat, or submit an online request</li>
+            <li class="flex items-center gap-2 font-medium">✓ Contingency fee structure—no legal fees unless we win</li>
+            <li class="flex items-center gap-2 font-medium">✓ Offices located in Clearwater, Holiday, Palm Harbor & Largo</li>
+          </ul>
+
+          <h3 class="text-2xl font-serif font-bold text-navy-900 pt-4">What To Do After an Accident in Palm Harbor</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Taking the right steps early can protect both your health and injury claim: seek prompt medical care, take photos of the scene, collect witness contacts, avoid admitting fault, and contact a personal injury attorney early.
+          </p>
+        </div>
+
+        <div class="bg-navy-900 text-white p-8 rounded-2xl shadow-xl space-y-4">
+          <h3 class="text-xl font-serif font-bold text-white">Committed to Your Recovery</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            In many cases, recovery means more than paying immediate medical bills—it involves addressing future treatment needs, lost income, and ongoing pain or limitations. By taking this broader view of your losses, our firm pursues a resolution that supports your long-term well-being.
+          </p>
+          <div class="pt-4 border-t border-white/10 flex flex-col sm:flex-row gap-3">
+            <a href="tel:7279390000" class="inline-block py-3 px-6 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-colors text-center">
+              Call or Text (727) 939-0000
+            </a>
+            <a href="#consultation" class="inline-block py-3 px-6 bg-white/10 hover:bg-white/20 text-white font-bold rounded-lg transition-colors text-center">
+              Submit Online Form
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy-900">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-4 text-left font-serif font-bold text-navy-900 flex justify-between items-center bg-slate-50 hover:bg-slate-100">
+            <span>How can I contact Andreopoulos Law for a free consultation?</span>
+            <span class="text-accent font-bold">+</span>
+          </button>
+          <div class="faq-content hidden px-6 py-4 text-slate-600 text-sm leading-relaxed border-t border-slate-200">
+            We offer multiple easy ways to get in touch 24/7. You can call or text us at (727) 939-0000, chat live with us using the corner widget, email our office, or complete the free online case evaluation form on our website.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-4 text-left font-serif font-bold text-navy-900 flex justify-between items-center bg-slate-50 hover:bg-slate-100">
+            <span>Do I need to pay anything upfront to hire your firm?</span>
+            <span class="text-accent font-bold">+</span>
+          </button>
+          <div class="faq-content hidden px-6 py-4 text-slate-600 text-sm leading-relaxed border-t border-slate-200">
+            No. We handle personal injury cases on a contingency fee basis, which means you do not pay attorney fees unless we recover compensation for you.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-4 text-left font-serif font-bold text-navy-900 flex justify-between items-center bg-slate-50 hover:bg-slate-100">
+            <span>Who will handle my case?</span>
+            <span class="text-accent font-bold">+</span>
+          </button>
+          <div class="faq-content hidden px-6 py-4 text-slate-600 text-sm leading-relaxed border-t border-slate-200">
+            Your case is personally handled by trial attorney John Andreopoulos, not passed off to non-lawyers or case managers. With over 88 jury trials tried, he is directly involved in strategy, negotiations, and litigation.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-xl overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-4 text-left font-serif font-bold text-navy-900 flex justify-between items-center bg-slate-50 hover:bg-slate-100">
+            <span>What should I do after an accident in Palm Harbor?</span>
+            <span class="text-accent font-bold">+</span>
+          </button>
+          <div class="faq-content hidden px-6 py-4 text-slate-600 text-sm leading-relaxed border-t border-slate-200">
+            Seek medical attention first, even if injuries seem minor. Then gather available evidence such as photos, witness information, and police reports. After that, contact our office so we can manage insurance communications.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Client Reviews -->
+  <section id="reviews" class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy-900">Real Stories from Real Clients</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="text-amber-400 font-bold">★★★★★</div>
+            <h4 class="font-serif font-bold text-navy-900 text-lg">“Best Injury Attorney”</h4>
+            <p class="text-slate-600 text-sm italic leading-relaxed">
+              “I admire his composure, work ethic, and excellent representation. From my first meeting, he answered all my questions, and explained things in terms I could easily understand.”
+            </p>
+          </div>
+          <div class="mt-6 font-bold text-slate-800 text-sm">- Tina L.</div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="text-amber-400 font-bold">★★★★★</div>
+            <h4 class="font-serif font-bold text-navy-900 text-lg">“Medical Balances Dropped”</h4>
+            <p class="text-slate-600 text-sm italic leading-relaxed">
+              “My case took many years but John and his team were patient and made sure I still got compensated as well as my medical balances were dropped and closed.”
+            </p>
+          </div>
+          <div class="mt-6 font-bold text-slate-800 text-sm">- Lana M.</div>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="text-amber-400 font-bold">★★★★★</div>
+            <h4 class="font-serif font-bold text-navy-900 text-lg">“Highly Recommend”</h4>
+            <p class="text-slate-600 text-sm italic leading-relaxed">
+              “I hired Attorney Andreopoulos regarding a slip and fall accident I experienced. From the moment we began working together, he displayed a high level of professionalism and empathy.”
+            </p>
+          </div>
+          <div class="mt-6 font-bold text-slate-800 text-sm">- Amy R.</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Consultation Form Section -->
+  <section id="consultation" class="py-20 bg-navy-900 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      
+      <div class="w-16 h-16 bg-white rounded-full p-2.5 mx-auto flex items-center justify-center shadow-md">
+        <img src="images/logomark.png" alt="Andreopoulos Law Firm Mark" class="w-full h-full object-contain" />
+      </div>
+
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold">Get Your Free Consultation</h2>
+      <p class="text-slate-300 text-sm max-w-xl mx-auto">
+        Reach out your way. We are available 24/7 via call, text, live chat, or online form.
+      </p>
+
+      <!-- 5-Channel Contact Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs pt-2 max-w-3xl mx-auto">
+        <a href="tel:7279390000" class="p-3 bg-white/10 hover:bg-white/20 rounded-lg border border-white/10 transition-colors">
+          <div class="font-bold text-accent-light mb-0.5">📞 CALL</div>
+          <div>(727) 939-0000</div>
+        </a>
+        <a href="sms:7279390000" class="p-3 bg-white/10 hover:bg-white/20 rounded-lg border border-white/10 transition-colors">
+          <div class="font-bold text-accent-light mb-0.5">💬 TEXT</div>
+          <div>(727) 939-0000</div>
+        </a>
+        <div class="p-3 bg-white/10 rounded-lg border border-white/10">
+          <div class="font-bold text-accent-light mb-0.5">🤖 LIVE CHAT</div>
+          <div>Click Bottom Corner</div>
+        </div>
+        <div class="p-3 bg-white/10 rounded-lg border border-white/10">
+          <div class="font-bold text-accent-light mb-0.5">📝 ONLINE FORM</div>
+          <div>Fill Out Below</div>
+        </div>
+      </div>
+
+      <form class="bg-white text-slate-800 p-8 rounded-2xl shadow-xl text-left space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name *</label>
+            <input type="text" required class="w-full p-3 bg-slate-50 border border-slate-300 rounded-lg text-sm focus:outline-none focus:border-accent" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number *</label>
+            <input type="tel" required placeholder="(727) 000-0000" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-lg text-sm focus:outline-none focus:border-accent" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address</label>
+          <input type="email" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-lg text-sm focus:outline-none focus:border-accent" />
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Brief Details About Your Case</label>
+          <textarea rows="3" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-lg text-sm focus:outline-none focus:border-accent"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg transition-colors uppercase tracking-wider text-sm">
+          Submit Form For Free Review
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Locations Section -->
+  <section id="locations" class="py-16 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h3 class="text-2xl font-serif font-bold text-navy-900">Locations</h3>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h4 class="font-serif font-bold text-navy-900 text-lg mb-1">Holiday</h4>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">1014 US-19, #110<br />Holiday, FL 34691</p>
+          <a href="https://www.google.com/maps?cid=15404622721785342579" target="_blank" class="text-xs font-bold text-accent hover:underline">Map & Directions</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h4 class="font-serif font-bold text-navy-900 text-lg mb-1">Clearwater</h4>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">111 N Belcher Rd, #201<br />Clearwater, FL 33765</p>
+          <a href="https://www.google.com/maps?cid=14779236777720299158" target="_blank" class="text-xs font-bold text-accent hover:underline">Map & Directions</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h4 class="font-serif font-bold text-navy-900 text-lg mb-1">Palm Harbor</h4>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">3531 Alt 19<br />Palm Harbor, FL 34683</p>
+          <a href="https://www.google.com/maps?cid=17454321493722190955" target="_blank" class="text-xs font-bold text-accent hover:underline">Map & Directions</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <h4 class="font-serif font-bold text-navy-900 text-lg mb-1">Largo</h4>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">1930 East Bay Drive<br />Largo, FL 33771</p>
+          <a href="https://www.google.com/maps?cid=15099751812902225566" target="_blank" class="text-xs font-bold text-accent hover:underline">Map & Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-slate-400 text-xs py-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-auto bg-white rounded p-1 flex items-center justify-center">
+            <img src="images/logomark.png" alt="Andreopoulos Law Logo" class="h-full object-contain" />
+          </div>
+          <span class="font-serif text-lg font-bold text-white">Andreopoulos Law</span>
+        </div>
+        <div class="text-slate-300">
+          Call or Text: <a href="tel:7279390000" class="font-bold text-white hover:text-accent-light">(727) 939-0000</a>
+        </div>
+      </div>
+
+      <p class="text-[11px] leading-relaxed text-slate-500 border-t border-white/10 pt-6">
+        The information on this website is for general information purposes only. Nothing on this site should be taken as legal advice for any individual case or situation. This information is not intended to create, and receipt or viewing does not constitute, an attorney-client relationship.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500">
+        <div>&copy; 2026 Andreopoulos Law. All Rights Reserved.</div>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:underline">Site Map</a>
+          <a href="#" class="hover:underline">Privacy Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile menu toggle
+      const btn = document.getElementById('mobileMenuBtn');
+      const menu = document.getElementById('mobileMenu');
+      if (btn && menu) {
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+      }
+
+      // FAQ accordion
+      document.querySelectorAll('.faq-toggle').forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const content = toggle.nextElementSibling;
+          content.classList.toggle('hidden');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
