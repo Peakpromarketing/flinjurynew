@@ -139,11 +139,21 @@
     <div class="absolute inset-0 z-0 bg-navy-900 overflow-hidden pointer-events-none">
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.77vh] min-w-full h-[56.25vw] min-h-full">
         <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-          <iframe id="js_video_iframe" src="https://jumpshare.com/embed/BlKtdsUngVrYKdzPIfMD" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+          <iframe 
+            id="js_video_iframe" 
+            src="https://jumpshare.com/embed/BlKtdsUngVrYKdzPIfMD?autoplay=1&loop=1&muted=1" 
+            frameborder="0" 
+            allow="autoplay; fullscreen"
+            webkitallowfullscreen 
+            mozallowfullscreen 
+            allowfullscreen 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+          </iframe>
         </div>
       </div>
-      <!-- Dark Gradient Overlay for Readability -->
-      <div class="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-navy-900/75"></div>
+      
+      <!-- Lighter Overlay to ensure background video is visible -->
+      <div class="absolute inset-0 bg-gradient-to-r from-navy-950/80 via-navy-950/50 to-navy-900/30"></div>
     </div>
     
     <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -154,32 +164,32 @@
           Call &bull; Text &bull; Email &bull; Chat &bull; Online Form
         </div>
 
-        <h1 class="text-4xl sm:text-6xl font-serif font-bold tracking-tight leading-tight">
+        <h1 class="text-4xl sm:text-6xl font-serif font-bold tracking-tight leading-tight [text-shadow:_0_2px_10px_rgba(0,0,0,0.8)]">
           Justice That Doesn’t <br/>
           <span class="text-accent-light">Back Down.</span>
         </h1>
 
-        <p class="text-xl text-slate-200 font-light leading-relaxed">
+        <p class="text-xl text-slate-100 font-light leading-relaxed [text-shadow:_0_1px_5px_rgba(0,0,0,0.8)]">
           When a Fair Offer Isn’t on The Table, We’re Ready to Fight for You.
         </p>
 
-        <p class="text-slate-300 text-base leading-relaxed">
+        <p class="text-slate-200 text-base leading-relaxed [text-shadow:_0_1px_5px_rgba(0,0,0,0.8)]">
           Every case is personally managed by trial attorney John Andreopoulos—offering 23+ years of experience and 88+ jury trials. Reach out anytime via call, text, chat, email, or online form.
         </p>
 
         <!-- Stats Grid -->
-        <div class="grid grid-cols-3 gap-6 pt-4 border-t border-white/15 max-w-lg">
+        <div class="grid grid-cols-3 gap-6 pt-4 border-t border-white/20 max-w-lg backdrop-blur-xs">
           <div>
-            <div class="font-serif text-3xl font-bold text-white">23+</div>
-            <div class="text-xs text-slate-300 font-medium mt-0.5">Years Experience</div>
+            <div class="font-serif text-3xl font-bold text-white [text-shadow:_0_2px_8px_rgba(0,0,0,0.9)]">23+</div>
+            <div class="text-xs text-slate-200 font-medium mt-0.5">Years Experience</div>
           </div>
           <div>
-            <div class="font-serif text-3xl font-bold text-accent-light">88+</div>
-            <div class="text-xs text-slate-300 font-medium mt-0.5">Jury Trials Led</div>
+            <div class="font-serif text-3xl font-bold text-accent-light [text-shadow:_0_2px_8px_rgba(0,0,0,0.9)]">88+</div>
+            <div class="text-xs text-slate-200 font-medium mt-0.5">Jury Trials Led</div>
           </div>
           <div>
-            <div class="font-serif text-3xl font-bold text-white">24/7</div>
-            <div class="text-xs text-slate-300 font-medium mt-0.5">Multi-Channel Access</div>
+            <div class="font-serif text-3xl font-bold text-white [text-shadow:_0_2px_8px_rgba(0,0,0,0.9)]">24/7</div>
+            <div class="text-xs text-slate-200 font-medium mt-0.5">Multi-Channel Access</div>
           </div>
         </div>
 
@@ -188,7 +198,7 @@
           <a href="#consultation" class="px-8 py-4 bg-accent hover:bg-accent-dark text-white font-bold rounded-lg shadow-xl text-center transition-all">
             Fill Out Consult Form
           </a>
-          <a href="tel:7279390000" class="px-8 py-4 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold rounded-lg flex items-center justify-center gap-2.5 transition-colors backdrop-blur-sm">
+          <a href="tel:7279390000" class="px-8 py-4 bg-navy-950/60 hover:bg-navy-950/80 border border-white/30 text-white font-bold rounded-lg flex items-center justify-center gap-2.5 transition-colors backdrop-blur-md">
             <svg class="w-5 h-5 text-accent-light" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path>
             </svg>
